@@ -1,6 +1,6 @@
 # Real-Time-Sudoku-Solver-
 
-This project is a **Streamlit-based Sudoku Solver WebApp** that allows users to upload an image of an unsolved Sudoku puzzle, solves it using an algorithm, and provides the solved puzzle in both text and image formats for easy download.
+This project is a Streamlit-based Sudoku Solver WebApp that allows users to upload an image of an unsolved Sudoku puzzle, solves it using a **Backtracking algorithm**, and provides the solved puzzle in both text and image formats for easy download.
 
 Access the Web App 🌐
 You can access the live version of the Sudoku Solver WebApp by clicking the link below:
@@ -10,7 +10,7 @@ You can access the live version of the Sudoku Solver WebApp by clicking the link
 ## Features ✨
 
 - **UI Streamlit WebApp**: A user-friendly interface that allows users to upload an image of a Sudoku puzzle.
-- **Sudoku Solver**: Solves the Sudoku puzzle using an algorithm.
+- **Sudoku Solver**: Solves the Sudoku puzzle using a Backtracking algorithm
 - **Image Output**: The solved puzzle is displayed as an image, and users can download the image.
 
 ## Technologies Used 💻
@@ -18,8 +18,8 @@ You can access the live version of the Sudoku Solver WebApp by clicking the link
 - Python 🐍
 - Streamlit 🚀
 - OpenCV 🖼️
-- Pytesseract (for text extraction from the image) 🔤
 - NumPy 🔢
+- Tensorflow 🤖
 
 ## About the Sudoku Solver Algorithm 🧠
 
@@ -77,10 +77,12 @@ http://localhost:8501
 ## How It Works 🔍
 
 1. **UI of Streamlit WebApp**: The Streamlit app provides a simple interface where users can upload an image of a Sudoku puzzle.
-2. **Upload Image**: After uploading, the image is processed, and text is extracted from it using OCR (Optical Character Recognition) to detect the numbers in the grid.
-3. **Solve Puzzle**: The extracted numbers are passed to a Sudoku-solving algorithm, which fills in the missing numbers.
-4. **Display Solved Puzzle**: The solved puzzle is displayed on the webpage.
-5. **Download Solved Puzzle**: Users can download the image of the solved Sudoku puzzle by clicking the "Download Solved Sudoku" button.
+2. **Upload Image**: After uploading, the image is processed using **OpenCV** for preprocessing, contour detection, and perspective transformation to extract the Sudoku grid.
+3. **Solve Puzzle**: The digits in the grid are recognized using a **TensorFlow model** that detects the numbers from the image.
+4. **Backtracking Algorithm**: Once the digits are recognized, a **backtracking algorithm** is used to solve the Sudoku puzzle by filling in the missing numbers.
+5. **Display Solved Puzzle**: The solved puzzle is displayed on the webpage for the user to view.
+6. **Download Solved Puzzle**: Users can download the image of the solved Sudoku puzzle by clicking the "Download Solved Sudoku" button.
+
 
 ## Folder Structure 📂
 
