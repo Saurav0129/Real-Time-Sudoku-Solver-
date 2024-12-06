@@ -89,7 +89,7 @@ Sudoku-Solver-WebApp/
 ├── Images/                  # Folder containing example images
 │   ├── Puzzle.png           # Example unsolved Sudoku image
 │   ├── Puzzle2.png          # Another unsolved Sudoku image
-│   ├── Puzzle3.png          # Anotherunsolved Sudoku image
+│   ├── Puzzle3.png          # Another unsolved Sudoku image
 │   └── solved_sudoku_puzzle2.png  # Solved Sudoku image for Puzzle2
 ├── best_model.keras         # Saved model for solving Sudoku
 ├── digit-recognition-using-cnn.ipynb  # Jupyter notebook for digit recognition
