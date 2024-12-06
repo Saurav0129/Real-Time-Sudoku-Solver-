@@ -1,6 +1,9 @@
-opencv-python
+streamlit
 numpy
-imutils
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
 tensorflow
 keras
 matplotlib
+Pillow
+imutils
