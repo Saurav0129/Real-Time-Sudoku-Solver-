@@ -7,7 +7,7 @@ from PIL import Image
 import io
 
 # Load the pre-trained model
-model = keras.models.load_model(r'C:\Users\skbis\Documents\Vs Code\Python\Sudoku Solver\best_model.keras')
+model = keras.models.load_model(r'best_model.keras')
 
 
 def fig_to_png(fig):
